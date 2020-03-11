@@ -5,7 +5,7 @@ function RankCard(props) {
     if(props.rank === '1')
     return(
         <ImageBackground
-          style={{ flex: 1, margin: 20, padding: 20, borderRadius: 20, overflow: "hidden" }}
+          style={{ flex: 1, margin: 20, padding: 20, borderRadius: 20, overflow: "hidden", minHeight: 200 }}
           source={require('../../../assets/gold.jpg')} >
             <View style={{ flex: 1, flexDirection: "row", justifyContent: "center" }}>
                 <Text style={{ fontSize: 20, fontSize: 32, fontFamily: "sans-serif-thin" }}>{props.name}</Text>
@@ -25,7 +25,7 @@ function RankCard(props) {
     else if(props.rank === '2')
     return(
         <ImageBackground
-          style={{ flex: 1, margin: 20, padding: 20, borderRadius: 20 , overflow: "hidden" }}
+          style={{ flex: 1, margin: 20, padding: 20, borderRadius: 20 , overflow: "hidden" , minHeight: 200 }}
           source={require('../../../assets/silver.jpg')}
         >
             <View style={{ flex: 1, flexDirection: "row", justifyContent: "center" }}>
@@ -47,7 +47,7 @@ function RankCard(props) {
     else
     return(
         <ImageBackground
-          style={{ flex: 1, margin: 20, padding: 20, borderRadius: 20 , overflow: "hidden" }}
+          style={{ flex: 1, margin: 20, padding: 20, borderRadius: 20 , overflow: "hidden", minHeight: 200 }}
           source={require('../../../assets/bronze.jpg')}
         >
             <View style={{ flex: 1, flexDirection: "row", justifyContent: "center" }}>
